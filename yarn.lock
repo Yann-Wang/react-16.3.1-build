@@ -521,7 +521,7 @@ babel-plugin-syntax-export-extensions@^6.8.0:
   version "6.13.0"
   resolved "http://registry.npm.taobao.org/babel-plugin-syntax-export-extensions/download/babel-plugin-syntax-export-extensions-6.13.0.tgz#70a1484f0f9089a4e84ad44bac353c95b9b12721"
 
-babel-plugin-syntax-flow@^6.18.0:
+babel-plugin-syntax-flow@^6.18.0, babel-plugin-syntax-flow@^6.8.0:
   version "6.18.0"
   resolved "http://registry.npm.taobao.org/babel-plugin-syntax-flow/download/babel-plugin-syntax-flow-6.18.0.tgz#4c3ab20a2af26aa20cd25995c398c4eb70310c8d"
 
@@ -780,6 +780,13 @@ babel-plugin-transform-export-extensions@^6.22.0:
   resolved "http://registry.npm.taobao.org/babel-plugin-transform-export-extensions/download/babel-plugin-transform-export-extensions-6.22.0.tgz#53738b47e75e8218589eea946cbbd39109bbe653"
   dependencies:
     babel-plugin-syntax-export-extensions "^6.8.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-flow-comments@^6.17.0:
+  version "6.22.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-flow-comments/download/babel-plugin-transform-flow-comments-6.22.0.tgz#8d9491132f2b48abd0656f96c20f3bbd6fc17529"
+  dependencies:
+    babel-plugin-syntax-flow "^6.8.0"
     babel-runtime "^6.22.0"
 
 babel-plugin-transform-flow-strip-types@^6.22.0:
@@ -1699,6 +1706,18 @@ find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
+flow-babel-webpack-plugin@^1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/flow-babel-webpack-plugin/download/flow-babel-webpack-plugin-1.1.1.tgz#7dd41110b96045eab8d8af6df48883310de54e91"
+  dependencies:
+    babel-plugin-transform-flow-comments "^6.17.0"
+    flow-bin ">=0.44.2 <1"
+    lodash.merge "^4.6.0"
+
+"flow-bin@>=0.44.2 <1":
+  version "0.74.0"
+  resolved "http://registry.npm.taobao.org/flow-bin/download/flow-bin-0.74.0.tgz#8017bb00efb37cbe8d81fbb7f464038bde06adc9"
+
 flush-write-stream@^1.0.0:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/flush-write-stream/download/flush-write-stream-1.0.3.tgz#c5d586ef38af6097650b49bc41b55fabb19f35bd"
@@ -2196,6 +2215,10 @@ locate-path@^2.0.0:
   dependencies:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
+
+lodash.merge@^4.6.0:
+  version "4.6.1"
+  resolved "http://registry.npm.taobao.org/lodash.merge/download/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
 
 lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
   version "4.17.10"

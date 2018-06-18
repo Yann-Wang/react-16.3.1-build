@@ -11,11 +11,7 @@ module.exports = {
         ],
         include: path.resolve(__dirname, 'src')
       },
-      {
-        test: /\.tsx?$/,
-        loader: 'babel-loader!ts-loader',
-        include: path.resolve(__dirname, 'src')
-      }
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },
   resolve: {

@@ -11,7 +11,7 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, 'local'),
     filename: 'app.js'
   },
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
